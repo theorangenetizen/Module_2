@@ -1,0 +1,90 @@
+article {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+.style-me1 {
+  color: red;
+}
+#style-me2 {
+  color: blue;
+}
+#style-me2,
+.style-me1 {
+  color: purple;
+}
+.my-descendants-are-styled p {
+  background-color: red;
+}
+.my-children-are-styled p {
+  background-color: lightgreen;
+}
+.box {
+  background-color: orange;
+  margin: 4px 2px 1px;
+  padding: 20px 15px 10px;
+  width: 250px;
+  height: 250px !important;
+  border: solid 10px;
+  box-sizing: content-box;
+  overflow: clip;
+  outline: 10px;
+  border-radius: 20px;
+  background-image: url(assets2/images/img1.png);
+}
+.position-absolute {
+  top: 0;
+  background-color: yellow;
+  left: 10px;
+  right: 10px;
+}
+.position-relative {
+  position: relative;
+  background-color: green;
+}
+.position-sticky {
+  position: sticky;
+  background-color: aqua;
+  top: 10px;
+}
+.text-style {
+  color: darkblue;
+  font-size: 20px;
+  line-height: 10;
+  font-weight: 900;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  text-transform: lowercase;
+  text-decoration: line-through;
+}
+a,
+a:link {
+  color: fuchsia;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  color: darkmagenta;
+  text-decoration: underline;
+}
+a:visited {
+  color: darkblue;
+  font-style: italic;
+}
+.calc-style {
+  width: calc(100vw - 100px);
+  background-color: chartreuse;
+}
+.fixed-width-col {
+  width: 350px;
+  display: inline-block;
+}
+.fluid-col {
+  display: inline-block;
+  widows: calc(100% - 350px);
+}
