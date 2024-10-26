@@ -1,0 +1,210 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: white;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .lSide {
+  position: relative;
+  background: #2a52be;
+  padding: 40px;
+}
+
+.pfText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pfText .img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pfText .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pfText h2 {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.pfText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contInfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contInfo ul {
+  position: relative;
+}
+
+.contInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contInfo ul li span {
+  color: white;
+  font-weight: 300;
+}
+
+.contInfo.education li {
+  margin-bottom: 15px;
+}
+
+.contInfo.education h5 {
+  color: lightpink;
+  font-weight: 500;
+}
+
+.contInfo.education h4:nth-child(2) {
+  color: white;
+  font-weight: 500;
+}
+
+.contInfo.education h4 {
+  color: white;
+  font-weight: 300;
+}
+
+.contInfo.language .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: lightpink;
+  display: block;
+  margin-top: 5px;
+}
+
+.contInfo.language .percent div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: navy;
+}
+
+.container .rSide {
+  position: relative;
+  background: white;
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #333;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year_company {
+  min-width: 150px;
+}
+
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: navy;
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year_company {
+    min-width: 150px;
+    margin-bottom: 5px;
+  }
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
